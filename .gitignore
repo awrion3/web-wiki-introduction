@@ -4,3 +4,6 @@
 *.iml
 *.ipr
 out/
+
+### Mac OS ###
+.DS_Store
