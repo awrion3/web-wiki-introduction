@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riwon's Journey</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/index.js"></script>
+</head>
+<body>
+<div id="app">
+    <header>
+        <h1 class="logo">
+            <img src="./images/header-logo.png" alt="Planet Logo" width="166" height="147" />
+            <span class="text">Crew Wiki</span>
+        </h1>
+    </header>
+
+    <main>
+        <h2 class="title">RIWON</h2>
+        <hr />
+        <section id="info">
+            <h3 class="subtitle">Self-introduction</h3>
+            <p>
+                Hello, nice to meet you. I'm Riwon.
+                My nickname may be a bit difficult to pronounce,
+                but I chose it because, in a way, it means 'Good has always won.'
+                Like my nickname, my main interest—Educational Technology—may seem a bit unfamiliar at first.
+                However, I have been passionate about education since I was young.
+                This passion deepened when I earned my teaching certification in college.
+                After gaining firsthand experience in the education field,
+                I wanted to develop programs that could further support education.
+                To achieve this, I pursued a double major in computer science
+                from my fourth year until graduation, embarking on my journey as a programmer.
+                In the future, I hope to become a programmer who can create educational solutions
+                that empower dreamers to achieve their own dreams.
+            </p>
+        </section>
+
+        <section id="photo">
+            <h3 class="subtitle">My Gallery</h3>
+            <div class="photo-gallery">
+                <img src="./images/food1.png" alt="Korean Food" />
+                <img src="./images/food2.png" alt="Japanese Food" />
+                <img src="./images/place1.png" alt="Traveling" />
+                <img src="./images/place2.png" alt="Hiking" />
+                <img src="images/dessert1.png" alt="Cheesecake" />
+                <img src="images/dessert2.png" alt="Takoyaki" />
+                <img src="images/other1.png" alt="Season" />
+                <img src="images/other2.png" alt="Animal" />
+                <img src="images/other3.png" alt="Hobby" />
+            </div>
+        </section>
+
+        <section id="recommends">
+            <h3 class="subtitle">Masterpieces That Moved Me</h3>
+            <article>
+                <h4>Life-Changing Book</h4>
+                <div class="thumbnail">
+                    <img
+                        src="./images/book1.jpg"
+                        width="200"
+                        alt="Dead Poet's Society"
+                    />
+                </div>
+                <p>
+                    I have been reading English literature,
+                    from classics to modern works, since my college days.
+                    I was drawn to the fact that every word in literature
+                    offers inspiration and new insights to its readers.
+                    These writings serve not just as tools for communication,
+                    but also play an important role in creating new values
+                    by connecting people and offering a shared perspective on the world.
+                    Moreover, based on the culture and history reflected in the pages,
+                    I believe literature helps us reflect on the past and present world,
+                    and even imagine the future.
+                    Among them, the most memorable work is Dead Poets Society.
+                    The original script was written by Tom Schulman and later novelized by Nancy Kleinbaum.
+                    This work is so famous that many people are familiar with its story
+                    through the 'O, Captain! My Captain!' verse of Walt Whitman.
+                    Through this work, I was once again reminded of the value of education and,
+                    even more so, the way individuals live their lives.
+                </p>
+            </article>
+            <hr>
+            <article>
+                <h4>Life-Changing Music</h4>
+                <div class="thumbnail">
+                    <img
+                        src="./images/song1.jpg"
+                        width="200"
+                        alt="Time to Say Goodbye"
+                    />
+                </div>
+                <p>
+                    Music has the power to soothe and breathe new life into our hearts at different times.
+                    Among all the songs, my favorite is 'Time to Say Goodbye.'
+                    The original title, 'Con te partiro', was released by the world-renowned tenor
+                    Andrea Bocelli on his first album Bocelli in 1995.
+                    The following year, a version sung by Sarah Brightman was released.
+                    Perhaps because the two voices blend together,
+                    I believe the new version has a more touching effect on listeners than the original.
+                    Though the title suggests a farewell,
+                    the Italian lyrics actually mean 'Let's leave together',
+                    implying not an ending, but a new beginning.
+                    When I listen to this song, I take time to reflect on my experiences
+                    and prepare for the next step in my life.
+                </p>
+            </article>
+        </section>
+
+        <section id="comment">
+            <div class="comment-writing-container">
+                <form>
+                    <fieldset>
+                        <legend>Leave Comments</legend>
+                        <label>
+                            <textarea placeholder="That's such a beautiful piece of writing. Please leave a heartwarming comment that can touch and inspire the crew."></textarea>
+                        </label>
+                        <div class="button-container">
+                            <button type="button" onclick="submitComment()">Register</button>
+                            <button type="reset">Cancel</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <ul class="comment-list">
+                <li>
+                    <div class="comment-item">
+                        <div class="comment-author">
+                            <img src="./images/comment-author-icon.png" alt="User Profile Image" />
+                            <span>Visitor</span>
+                        </div>
+                        <div class="comment-content">
+                            I also like ‘Time to Say Goodbye’! :&#41;
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="comment-item">
+                        <div class="comment-author">
+                            <img src="./images/comment-author-icon.png" alt="User Profile Image" />
+                            <span>Visitor</span>
+                        </div>
+                        <div class="comment-content">
+                            Reading Riwon's article made me want to read the book too.
+                            I need to read Dead Poets Society!
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <img src="./images/footer-logo.png" width="180" alt="Woowahan Techcourse Logo" />
+            <p>&copy; 우아한테크코스 All Rights reserved.</p>
+        </footer>
+    </main>
+
+    <aside class="right-sidebar">
+        <div class="profile-image">Riwon's Profile Image</div>
+        <nav>
+            <h2>Contents</h2>
+            <ol class="contents">
+                <li>
+                    <a href="#info">Self-introduction</a>
+                </li>
+                <li>
+                    <a href="#photo">My Gallery</a>
+                </li>
+                <li>
+                    <a href="#recommends">Masterpieces That Moved Me</a>
+                </li>
+                <li>
+                    <a href="#comment">Comments</a>
+                </li>
+            </ol>
+            <ul>
+                <li>
+                    <button id="translator">한국어</button>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+</div>
+</body>
+</html>
