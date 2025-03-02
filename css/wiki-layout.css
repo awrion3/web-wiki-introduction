@@ -224,6 +224,20 @@ aside.right-sidebar nav {
   padding: var(--right-sidebar-padding);
 }
 
+#translator {
+  background-color: #4CAF;
+  color: black;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+
+#translator:hover {
+  background-color: #4490AA;
+  color: white;
+}
+
 ol.contents {
   list-style-type: decimal;
   padding: 24px;
