@@ -1,24 +1,42 @@
 function submitComment() {
-        const commentText = document.querySelector("textarea").value;
+    const commentText = document.querySelector("textarea").value;
+    const isKorean = window.location.pathname.includes("index.html");
 
-        if (commentText.trim() !== "") {
-            const newComment = document.createElement("li");
+    const authorName = isKorean ? "방문자" : "Visitor";
+    const successMessage = isKorean ? "댓글이 등록되었습니다." : "Your comment has been posted.";
+    const errorMessage = isKorean ? "댓글을 입력해주세요." : "Please enter a comment.";
 
-            newComment.innerHTML = `
-                <div class="comment-item">
+    if (commentText.trim() !== "") {
+        const newComment = document.createElement("li");
+
+        newComment.innerHTML = `
+            <div class="comment-item">
                 <div class="comment-author">
-                <img src="./images/comment-author-icon.png" alt="사용자 프로필 이미지" />
-                <span>방문자</span>
+                    <img src="./images/comment-author-icon.png" alt="User Profile Image" />
+                    <span>${authorName}</span>
                 </div>
                 <div class="comment-content">${commentText}</div>
-                </div>
-            `;
+            </div>
+        `;
 
-            document.querySelector(".comment-list").appendChild(newComment);
-            document.querySelector("textarea").value = "";
+        document.querySelector(".comment-list").appendChild(newComment);
+        document.querySelector("textarea").value = "";
 
-            alert("댓글이 등록되었습니다.");
-        } else {
-            alert("댓글을 입력해주세요.");
-        }
+        alert(successMessage);
+    } else {
+        alert(errorMessage);
+    }
 }
+
+function translateContent() {
+    const languageButton = document.getElementById("translator");
+    const isKorean = window.location.pathname.includes("index.html");
+
+    languageButton.addEventListener("click", () => {
+        window.location.href = isKorean ? "english.html" : "index.html";
+    });
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    translateContent();
+});
